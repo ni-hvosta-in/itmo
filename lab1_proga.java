@@ -1,65 +1,97 @@
 import java.util.Random;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import static java.lang.Math.*;
+
 public class Lab1 {
 
-    public static boolean in_set(long x, int [] X) {
-        int k = 0;
-        for (int i : X) {
-            if (x == i) {
-                k = 1;
+    public static double calculation(long w, double x) {
+
+        double ans;
+
+        switch ((int) w) {
+            case 13:
+                ans = pow(((sin(atan((x - 2) / 12))) / (pow((pow(Math.E, x) - 1) / (pow(x, (3d / 4) * x)), 2) - (1d / 2))), 3);
                 break;
-            }
+
+            case 5, 6, 10, 14, 15, 16:
+                ans = pow(sin(pow(Math.E, x)), ((Math.PI - pow(x, (1d / 3) * (3 * (x + (1d / 3)) + 1))) / 0.25));
+                break;
+
+            default:
+                ans = pow(atan(cos(cos(asin((x - 2) / 12)))), 0.5 * (1 - sin(pow(pow(x, (2d / 3) / (1d / 4 + x)), 3))));
+                break;
         }
-        if (k == 1) return true;
-        else return false;
+        return ans;
+
     }
 
-    public static double calculation(double x, long z) {
-        int [] X = {5, 6, 10, 14, 15, 16};
-        if (z == 13) return (Math.sin(Math.atan((x-2)/12)))/(((Math.pow(Math.E,x)-1)/(Math.pow(x,0.75*x))));
-        else if (in_set(z,X)) return Math.pow(Math.sin(Math.pow(Math.E,x)), 4*(Math.PI-Math.pow(x,(3*x + 2)/3)));
-        else return Math.pow(Math.atan(Math.cos(Math.cos(Math.asin((x-2)/12)))),0.5*(1-Math.sin(Math.pow(Math.pow(x,(2/(3*(0.25+x)))),3))));
+    public static double rand(int a, int b) {
+
+        Random r = new Random();
+        double ans = r.nextInt(b - a + 1) + a;
+        if (ans != 4) {
+            ans += random();
+        }
+        return ans;
+
     }
 
-    public static void show(double [][] w){
+    public static void show(double[][] w) {
         for (int i = 0; i < 13; i++) {
-            for (int j = 0; j < 20; j++) System.out.printf("%12.4f ", w[i][j]);
+            for (int j = 0; j < 20; j++) {
+                System.out.printf("%15.4f ", w[i][j]);
+            }
             System.out.println();
         }
     }
+
     public static void main(String[] args) {
 
-            Random r = new Random();
+        long[] w;
+        w = new long[13];
 
-            long [] z;
-            z = new long[13];
+        double[] x;
+        x = new double[20];
 
-            double [] x;
-            x = new double[20];
+        double[][] c;
+        c = new double[13][20];
 
-            double [][] w;
-            w = new double[13][20];
+        for (int i = 0; i < 13; i++) {
+            w[i] = i + 4;
+        }
+
+        System.out.println("W:");
+
+        for (int i = 0; i < 13; i++) {
+            System.out.print(w[i] + " ");
+        }
+
+        System.out.println();
+        System.out.println();
 
 
-            for (int i = 0; i < 13; i++) z[i] = i+4;
-            System.out.println("Z:");
-            for (int i = 0; i < 13; i++) System.out.print(z[i] + " ");
+        for (int i = 0; i < 20; i++) {
+            x[i] = rand(-8, 4);
+        }
 
-            System.out.println();
-            System.out.println();
+        System.out.println("X:");
 
-            for (int i = 0; i < 20; i++) x[i] = r.nextInt(13)-8;
-            System.out.println("X:");
-            for (int i = 0; i < 20; i++) System.out.print(x[i]+ " ");
+        for (int i = 0; i < 20; i++) {
+            System.out.print(x[i] + " ");
+        }
 
-            System.out.println();
-            System.out.println();
+        System.out.println();
+        System.out.println();
 
-            System.out.println("W:");
-            for (int i = 0; i < 13; i++) for (int j = 0; j < 20; j++) w[i][j] = calculation(x[j],z[i]);
+        for (int i = 0; i < 13; i++) {
+            for (int j = 0; j < 20; j++) {
+                c[i][j] = calculation(w[i], x[j]);
+            }
+        }
 
-            show(w);
+        System.out.println("С:");
+        show(c);
+        
     }
+
 }
