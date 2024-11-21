@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<day1>
+		<name> Вторник </name>
+		<schedule>
+
+			<lesson1>
+
+				<id> 1 </id>
+				<title> Английский язык </title>
+
+				<type>
+					<id> 1 </id>
+					<title> Практика </title>
+				</type>
+
+				<timestart> 08:20 </timestart>
+				<timeend> 09:50 </timeend>
+
+				<teacher>
+					<id> 100 </id>
+					<name> Чуркина Юлия Григорьевна </name>
+				</teacher>
+
+				<place>
+					<aud> 3210 </aud>
+					<corp>
+						<id> 2 </id>
+						<name> ул.Ломоносова, д.9, лит. Е </name>
+					</corp>
+				</place>
+
+			</lesson1>
+
+			<lesson2>
+
+				<id>2</id>
+				<title> Английский язык </title>
+
+				<type>
+					<id> 1 </id>
+					<title> Практика </title>
+				</type>
+
+				<timestart> 10:00 </timestart>
+				<timeend> 11:30 </timeend>
+
+				<teacher>
+					<id> 100 </id>
+					<name> Чуркина Юлия Григорьевна </name>
+				</teacher>
+
+				<place>
+					<aud> 3210 </aud>
+					<corp>
+						<id> 2 </id>
+						<name> ул.Ломоносова, д.9, лит. Е </name>
+					</corp>
+				</place>
+
+			</lesson2>
+
+			<lesson3>
+
+				<id>3</id>
+				<title> Основы дискретной математики (продвинутый уровень) </title>
+
+				<type>
+					<id> 0 </id>
+					<title> Лекция </title>
+				</type>
+
+				<timestart> 17:00 </timestart>
+				<timeend> 18:30 </timeend>
+
+				<teacher>
+					<id> 101 </id>
+					<name> Карпов Дмитрий Валерьевич </name>
+				</teacher>
+
+				<place>
+					<aud> 1404 </aud>
+					<corp>
+						<id> 1 </id>
+						<name> Кронверкский пр., д.49, лит.А </name>
+					</corp>
+				</place>
+
+			</lesson3>
+
+			<lesson4>
+
+				<id>4</id>
+				<title> Основы дискретной математики (продвинутый уровень) </title>
+
+				<type>
+					<id> 1 </id>
+					<title> Практика </title>
+				</type>
+
+				<timestart> 18:40 </timestart>
+				<timeend> 20:10 </timeend>
+
+				<teacher>
+					<id> 101 </id>
+					<name> Карпов Дмитрий Валерьевич </name>
+				</teacher>
+
+				<place>
+					<aud> 2326 </aud>
+					<corp>
+						<id> 1 </id>
+						<name> Кронверкский пр., д.49, лит.А </name>
+					</corp>
+				</place>
+
+			</lesson4>
+
+		</schedule>
+	</day1>
+
+	<day2>
+		<name> Пятница </name>
+		<schedule>
+
+			<lesson1>
+
+				<id>1</id>
+				<title> Матанализ </title>
+
+				<type>
+					<id> 1 </id>
+					<title> Практика </title>
+				</type>
+
+				<timestart> 08:20 </timestart>
+				<timeend> 09:50 </timeend>
+
+				<teacher>
+					<id> 102 </id>
+					<name> Багмутов Александр Сергеевич </name>
+				</teacher>
+
+				<place>
+					<aud> 2316 </aud>
+					<corp>
+						<id> 1 </id>
+						<name>Кронверкский пр., д.49, лит.А </name>
+					</corp>
+				</place>
+
+			</lesson1>
+
+			<lesson2>
+
+				<id>2</id>
+				<title> Матанализ </title>
+
+				<type>
+					<id> 1 </id>
+					<title> Практика </title>
+				</type>
+
+				<timestart> 10:00 </timestart>
+				<timeend> 11:30 </timeend>
+
+				<teacher>
+					<id> 102 </id>
+					<name> Багмутов Александр Сергеевич </name>
+				</teacher>
+
+				<place>
+					<aud> 2316 </aud>
+					<corp>
+						<id> 1 </id>
+						<name> Кронверкский пр., д.49, лит.А </name>
+					</corp>
+				</place>
+
+			</lesson2>
+
+		</schedule>
+	</day2>
+</root>
