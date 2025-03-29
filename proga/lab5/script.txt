@@ -1,0 +1,17 @@
+show
+info
+save
+group_counting_by_semester_enum
+insert kool2
+propba_name
+120
+120
+20
+обычное обучение
+2
+САША
+25-10-2023T14:30:00+03:00
+2020212782
+желтый
+черный
+save
